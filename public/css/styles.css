@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Roboto';
+    font-size: 12px;
+    background-color: #ebebeb;
+}
+
+.main-header {
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+.main-header-top-bar {
+    display: flex;
+}
+
+.hamburguer-button {
+    background-color: #03264C;
+    color: #ffffff;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+.logo {
+    width: 50%;
+    
+}
+
+input {
+    width: 50%;
+}
+
+.copy-header {
+    font-weight: 1000;
+    text-align: center;
+    color: #03264C;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.logo-busqueda {
+    display: flex;
+    
+}
+
+.main-navbar {
+    display: none;
+}
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-navbar a {
+    text-decoration: none;
+    color: #222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+    font-weight: 1000;
+}
+
+main {
+    background-color: #ebebeb;
+    margin: auto;
+    width: 90vw;
+}
+
+main section {
+    margin: 10px 0;
+}
+
+.caracteristicas-articulo {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    display: flex;
+    position: relative;
+    font-weight: 1000;
+    flex-flow: row wrap;
+
+}
+
+main article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color: #39b54a;
+   }
+   
+
+h2 {
+    font-size: 24px;
+}
+
+.precio {
+    font-size: 18px;
+    flex: 1 1 30%;
+
+}
+
+.descuento {
+    font-size: 16px;
+    flex: 1 1 70%;
+    color: #39b54a;
+}
+
+.descripcion {
+    font-size: 16px;
+    display: none;
+    flex: 1 1 auto;
+    color: #666;
+    margin: 0;
+    margin-top: 25px;
+    font-weight: 700;
+}
+
+footer {
+    text-align: center;
+    background-color: #ffffff;
+    
+}
+
+footer section div {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+footer h4 {
+    color: #666;
+    text-align: left;
+}
+
+@media (min-width: 361px) {
+    
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .descripcion {
+        display: flex;
+
+    }
+    
+    main article {
+    box-shadow: 0px 0px 10px 0px rgb(100, 100, 100);
+    }
+
+    h2 {
+        flex: 1 1 100%;
+
+    }
+
+    .hamburguer-button {
+        display: none;
+    }
+
+    main section {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    main section article {
+        flex: 1 1 40%;
+        margin: 10px;
+    }
+}
+
+
+@media (min-width: 769px) {
+    .main-header-top-bar {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .copy-header {
+        max-width: 350px;
+        text-align: right;
+    }
+
+    .hamburguer-button {
+        display: none;
+    }
+
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-navbar ul {
+        display: flex;
+    }
+
+    .main-navbar li {
+        margin: 0 5px;
+    }
+
+    .hamburguer-button {
+        display: none;
+    }
+
+    main section article {
+        flex: 1 1 15%;
+        
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-header-top-bar, .main-navbar {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .main-header-top-bar {
+        align-items: center;
+    }
+
+    .main-navbar {
+        margin-top: 30px;
+    }
+
+    .main-navbar li {
+        margin: 0 10px;
+    }
+
+    .main-navbar a {
+        font-size: 19px;
+
+    }
+
+    .copy-header {
+        margin: 0;
+        max-width: none;
+        font-size: 18px;
+    }
+}
