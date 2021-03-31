@@ -8,19 +8,72 @@
     <title>Login de usuario</title>
 </head>
 <body>
-    <div class="login">
-        <div class="login-usuario"> 
-            <input type="text" name="usuario" id="usuario">
+
+    <header class="main-header">
+        <div class="logo-buscador">
+            <img src="/images/logo-mercado-liebre.svg" class="logo" alt="Logo Mercado Liebre" width="100%">
+                
+                <div class="buscador">
+                    <input type="text" placeholder="Buscar productos, marcas">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>  
+           
+         </div>
+            
+         <p class="copy-header">
+            <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y con tarjeta de crédito
+        </p>
+         
+         <a href="#" class="hamburguer-button">
+             <i class="fas fa-bars"></i>
+            
+            </a>
+        
+            <nav class="main-navbar">
+                <ul class="left-navbar">
+                    <li><a href = "#">Ofertas</a></li>
+                    <li><a href = "#">Tiendas Oficiales</a></li>
+                    <li><a href = "#">Vender</a></li>
+                    <li><a href = "#">Ayuda</a></li>
+                </ul>
+            
+            <ul class="right-navbar">
+                <li><a href = "/register">Creá tu cuenta
+                    <i class="far fa-address-card"></i>
+                    </a></li>
+                
+                <li><a href = "/login">Ingresá
+                    <i class="fas fa-sign-in-alt"></i>
+                </a></li>
+                
+                <li><a href = "#">Mis compras
+                    <i class="fas fa-shopping-basket"></i>
+                </a></li>
+            </ul>
+        </nav>
+    
+    </header>
+
+    <div class="login-title">
+        <h2>Ingresá a tu cuenta</h2>
+    </div>
+
+    <form action="/login" method="post" form="form-login" class="form-login">
+        <div class="login-form">
+            <div class="login-usuario"> 
+                <input type="text" name="usuario" id="usuario" placeholder="Usuario">
+            </div>
+
+            <div class="login-password">
+                <input type="password" name="password" id="password" placeholder="Contraseña">
+            </div>
+            
+            <div class="login-button">
+                <button type="submit"><a href = "/">Enviar</a></button>
+            </div>
+            <p class="form-link">Aún no estas registrado? <a href="/register">Registrate aquí</a></p>
         </div>
 
-        <div class="login-password">
-            <input type="password" name="password" id="password">
-        </div>
-        
-        <div class="login-button">
-            <button type="submit"><a href = "/">Enviar</a></button>
-        </div>
-        <p class="form-link">Aún no estas registrado? <a href="/register">Registrate aquí</a></p>
-    </div>
+    </form>
 </body>
 </html>

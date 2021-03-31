@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: #ebebeb;
+}
+
+.main-header {
+    background-color: #EAC926;
+    width: 100%;
+    
+}
+
+.logo-buscador {
+    display: flex;
+    padding: 25px;
+    align-items: center;
+}
+
+.hamburguer-button {
+    background-color: #03264C;
+    color: #ffffff;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+.logo {
+    width: 50%;
+    
+}
+
+.buscador input {
+    width: 80%;
+    padding: 5px;
+    height: 35px;
+    border: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+.buscador button {
+    border: 0px #fff;
+    background-color: #fff;
+    border-radius: 0 5px 5px 0;
+    color: #666;
+    padding: 2px;
+}
+
+.copy-header {
+    font-weight: 1000;
+    text-align: center;
+    color: #03264C;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+
+}
+
+.buscador {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-navbar a {
+    text-decoration: none;
+    color: #222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+    font-weight: 1000;
+}
+
+.login-title {
+    text-align: center;
+    color: #03264C;
+    margin: 10px;
+    font-size: 15px;
+}
+
+input:required:invalid {
+    border: solid red 1px;
+}
+
+input:required:valid {
+    border: solid rgb(78, 245, 78) 1px;
+}
+
+.login-form {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+}
+
+input {
+    
+    padding: 10px 5px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+p {
+    padding: 20px;
+}
+
+button a:visited {
+    text-decoration: none;
+    color: white;
+
+}
+
+button {
+    background-color: #03264C;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
