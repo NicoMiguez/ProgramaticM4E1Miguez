@@ -5,18 +5,21 @@
 }
 
 body {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-size: 12px;
     background-color: #ebebeb;
 }
 
 .main-header {
     background-color: #EAC926;
-    padding: 20px;
+    width: 100%;
+    
 }
 
-.main-header-top-bar {
+.logo-buscador {
     display: flex;
+    padding: 25px;
+    align-items: center;
 }
 
 .hamburguer-button {
@@ -36,8 +39,20 @@ body {
     
 }
 
-input {
-    width: 50%;
+.buscador input {
+    width: 80%;
+    padding: 5px;
+    height: 35px;
+    border: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+.buscador button {
+    border: 0px #fff;
+    background-color: #fff;
+    border-radius: 0 5px 5px 0;
+    color: #666;
+    padding: 2px;
 }
 
 .copy-header {
@@ -46,16 +61,21 @@ input {
     color: #03264C;
     margin-top: 10px;
     margin-bottom: 10px;
+    
 
 }
 
-.logo-busqueda {
+.buscador {
+    width: 50%;
     display: flex;
+    justify-content: center;
     
 }
 
 .main-navbar {
-    display: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 .main-navbar ul {
@@ -73,6 +93,8 @@ input {
     font-size: 17px;
     font-weight: 1000;
 }
+
+
 
 main {
     background-color: #ebebeb;
@@ -192,7 +214,7 @@ footer h4 {
 
 
 @media (min-width: 769px) {
-    .main-header-top-bar {
+    .logo-buscador {
         display: flex;
         justify-content: space-between;
 
@@ -231,12 +253,12 @@ footer h4 {
 }
 
 @media (min-width: 1200px) {
-    .main-header-top-bar, .main-navbar {
+    .logo-buscador, .main-navbar {
         max-width: 1200px;
         margin: auto;
     }
 
-    .main-header-top-bar {
+    .logo-buscador {
         align-items: center;
     }
 

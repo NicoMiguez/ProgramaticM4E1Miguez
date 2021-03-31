@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/register.css" rel="stylesheet">
+    <title>Registro de usuario</title>
+</head>
+<body>
+
+    <header class="register-header">
+        
+        <img src="/images/logo-mercado-liebre.svg" class="logo" alt="Logo Mercado Liebre" width="100%">
+
+    </header>
+
+    <div class="form-titulo">
+
+        <h2>Registro de usuario</h2>
+
+    </div>
+
+    <form action="/register" method="POST" form="form-registro" class="form-registro">
+      
+        <div class="form-inputs">
+               <div class="text-inputs">
+                    <div class="nombre-apellido">
+                        
+                        <input type="text" placeholder="Nombre y apellido" name="nombre-apellido" id="nombre-apellido" required>
+                    </div>
+                    
+                
+                    <div class="usuario">
+                        
+                        <input type="text" placeholder="Usuario" name="usuario" id="usuario" minlength="5" required>
+                    </div>
+
+                    <div class="email">
+                                
+                        <input type="email" placeholder="E-mail" name="email" id="email" required>
+                    </div>
+                    <br>
+                    
+                    <h4>Fecha de nacimiento:</h4>
+                    <div class="nacimiento">
+                    
+                        <input type="date" name="nacimiento" id="nacimiento" required>
+                    </div>
+
+                    <div class="domicilio">
+                        
+                        <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" required>
+                    </div>
+            
+
+    <br>
+
+            <div class="password">
+                        
+                <input type="password" name="password" id="password" placeholder="Contraseña" required>
+                
+                <input type="password" name="password" id="password-confirm" placeholder="Confirma tu contraseña" required>
+            </div>
+            <br>
+            
+            </div>
+
+            <h4>Perfil del usuario</h4>
+            
+            <div class="perfil">
+                
+                <div class="comprar">
+                    <input type="radio" name="perfil" id="perfil-compra" value="Comprar"> 
+                    <label for="comprar">Comprar</label>
+                </div>
+                
+                <div class="vender">
+                    <input type="radio" name="perfil" id="perfil-venta" value="Vender"> 
+                    <label for="vender">Vender</label>
+                </div>    
+
+            </div>
+    <br>
+            <h4>Intereses</h4>
+            <div class="intereses">
+                
+                <div class="electro">
+                    <input type="checkbox" name="intereses" value="electro"> 
+                    <label for="intereses">Electro</label>
+                </div>
+
+                <div class="moda">
+                    <input type="checkbox" name="intereses" value="moda"> 
+                    <label for="intereses">Moda</label>
+                </div>
+                
+                <div class="hogar">
+                    <input type="checkbox" name="intereses" value="hogar"> 
+                    <label for="intereses">Hogar</label>
+                </div>
+
+
+                <div class="jugueteria">
+                    <input type="checkbox" name="intereses" value="jugueteria"> 
+                    <label for="intereses">Juguetería</label>
+                </div>
+                
+                <div class="vida-sana">
+                    <input type="checkbox" name="intereses" value="vida-sana"> 
+                    <label for="intereses">Vida Sana</label>
+                </div>
+
+
+            </div>
+    <br>
+            <h4>Foto de usuario</h4>
+            <div class="foto">
+                
+                <input type="file" name="avatar" id="avatar" accept=".jpg" multiple>
+            </div>
+    <br>
+            <div class="button">
+                <button type="reset">Cancelar</button>
+                <button type="submit"><a href = "/">Enviar</a></button>
+            </div>
+
+            <p class="form-link">Ya estás registrado? <a href="/login">Ingrese aquí</a></p>
+        </div>
+    </form>
+
+</body>
+</html>
