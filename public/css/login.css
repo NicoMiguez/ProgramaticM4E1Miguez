@@ -120,9 +120,11 @@ input {
     padding: 10px 5px;
     border-radius: 10px;
     margin: 10px;
+    width: 100%;
+   
 }
 
-p {
+.form-link {
     padding: 20px;
 }
 
@@ -132,9 +134,18 @@ button a:visited {
 
 }
 
+.login-button {
+    display: flex;
+    justify-content: center;
+ 
+}
+
 button {
-    background-color: #03264C;
+    background-color: #1759a0;
     color: white;
     padding: 5px;
     border-radius: 5px;
+    margin: 10px;
+    width: 100%;
+    
 }
