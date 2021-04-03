@@ -299,4 +299,25 @@ footer h4 {
         transition: 300ms;
     }
 
+    footer {
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    footer section {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    footer section h4 {
+        flex-wrap: wrap;
+        justify-content: left;
+    
+    }
+
+    footer section i:hover {
+        color: #03264C;
+        transition: 300ms;
+    }
 }
