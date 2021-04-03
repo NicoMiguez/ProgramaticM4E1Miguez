@@ -159,20 +159,23 @@ h2 {
 }
 
 footer {
+    display: flex;
     text-align: center;
     background-color: #ffffff;
+    flex-flow: column;
     
 }
 
 footer section div {
     color: #1259c3;
     font-size: 2em;
-    margin-bottom: 10px;
+    margin: 10px;
 }
 
 footer h4 {
     color: #666;
-    text-align: left;
+    text-align: center;
+    margin: 20px;
 }
 
 @media (min-width: 361px) {
@@ -301,18 +304,23 @@ footer h4 {
 
     footer {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
+        text-align: center;
+        justify-content: space-around;
         
     }
 
     footer section {
         flex-wrap: wrap;
         justify-content: space-around;
+        flex: 1 1 30%;
     }
 
-    footer section h4 {
-        flex-wrap: wrap;
+    .copyright {
+        display: flex;
         justify-content: left;
+        
     
     }
 
